@@ -1,5 +1,56 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #fff5ee;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #4d2000;
+  font-size: 1.5em;
+  line-height: 150%;
+}
+#container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 60px 0 40px 0;
+}
+h1::before {
+  content: " ";
+  display: inline-block;
+  border-left: 5px solid #b34a00;
+  border-right: 5px solid #b34a00;
+  width: 5px;
+  height: 60px;
+  background-color: #ffb580;
+}
+h1::after {
+content: "";
+display: inline-block;
+width: 0;
+height: 0;
+border-left: 20px solid #ffb580;
+border-top: 10px solid transparent;
+border-bottom: 10px solid transparent;
+}
+p::after{
+  content: url(../img/balloon.png);
+  display: block;
+  text-align: center;
+}
+a:link,
+a:visited {
+  color: #4d2000;
+  background-color: #fff5ee;
+  text-decoration: none;
+  padding: 3px;
+  border-bottom: #4d2000 1px solid;
+}
+a:hover,
+a:active {
+  color: #fff5ee;
+  background-color: #4d2000;
 }
